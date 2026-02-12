@@ -3,15 +3,21 @@
 using namespace std;
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
-    const int n = 5;
-    float m[n]  = {10, 10, 11, 8, 5};
-    
+    //SetConsoleOutputCP(CP_UTF8);
+    setlocale(LC_ALL, "russian");
+    const int n = 10;
+    float m[n] = {};
+
+    for (int q = 0; q < 10; q++)
+    {
+        m[q] = rand() % 10;
+    }
+
     cout << "задание a) - Умножить на 2:" << endl;
 
     int i = 0;
 
-    while(i < 5)
+    while (i < 5)
     {
         m[i] *= 2;
         cout << m[i] << endl;
@@ -24,7 +30,7 @@ int main() {
     cout << "Введите число A" << endl;
     cin >> A;
     cout << "задание б) - Уменьшить на А:" << endl;
-    while(i < 5)
+    while (i < 5)
     {
         m[i] -= A;
         cout << m[i] << endl;
@@ -33,12 +39,12 @@ int main() {
 
 
     i = 0;
-    float x =  m[0];
+    float x = m[0];
     cout << "задание в) - Разделить на 1 элемент" << endl;
-    while(i < 5)
+    while (i < 5)
     {
         m[i] = m[i] / x;
-        cout <<  m[i] << endl;
+        cout << m[i] << endl;
         i++;
     }
 

@@ -3,9 +3,9 @@
 using namespace std;
 
 int main() {
-    //SetConsoleOutputCP(CP_UTF8);
-    setlocale(LC_ALL, "russian");
-    const int n = 100;
+    SetConsoleOutputCP(CP_UTF8);
+    //setlocale(LC_ALL, "russian");
+    const int n = 20;
     float m[n] = {};
     for (int q = 0; q < n; q++)
     {

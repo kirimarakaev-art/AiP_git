@@ -19,7 +19,7 @@ int main()
     int mass[n];
     for(int i{0}; i < n; i++)
     {
-        *(mass + i) = rand()%100;
+        *(mass + i) = rand() % 100;
         cout << *(mass + i) << endl;
     }
     cout << sumary(mass, n);

@@ -6,5 +6,6 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
     int x = 21;
     int* px = &x;
+    cout << *px << endl;
     (*px % 2) == 0 ? cout << "число чётное": cout << "число нечётное";
 }

@@ -28,7 +28,7 @@ struct Point
 int main()
 {
     SetConsoleOutputCP(CP_UTF8);
-    srand(static_cast<unsigned int>(time(0)));
+    srand(time(0));
     Point p;
     Point* ptr = &p;
     ptr->x = rand() % 11;

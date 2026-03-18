@@ -14,7 +14,7 @@ int main() {
     }
 
     cout << endl;
-    int max = 0;
+    int min = 99999;
     int str = 1;
     int num = 1;
     
@@ -23,9 +23,9 @@ int main() {
         int x = 0;
         while(x < n)
         {
-            if(*q >= max)
+            if(*q <= min)
             {
-                max = *q;
+                min = *q;
                 num = str;
             }
             x++;

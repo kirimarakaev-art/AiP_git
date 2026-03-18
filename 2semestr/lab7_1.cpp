@@ -1,9 +1,11 @@
 #include <iostream>
 #include <windows.h>
+#include <ctime>
 using namespace std;
 
 int main() {
     SetConsoleOutputCP(CP_UTF8);
+    srand(time(0));
     int m = 4;
     int n = 4;
     int *mass = new int[m * n];

@@ -60,7 +60,7 @@ int main(){
     list *n2 = add(root, 20);
     list *n3 = add(n2, 30);
 
-    cout << "Список до удаления:" << endl;
+    cout << "Список:" << endl;
     print(root);
     del(root);
     cout << "Список после удаления:" << endl;

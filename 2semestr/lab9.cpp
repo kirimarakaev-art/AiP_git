@@ -1,6 +1,5 @@
 #include <iostream>
 #include <windows.h>
-#include <cstdlib>
 using namespace std;
 
 struct list {

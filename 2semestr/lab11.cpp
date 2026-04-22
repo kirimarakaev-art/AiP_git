@@ -55,7 +55,9 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
 
     Stack stk;
-    init(&stk); 
+    init(&stk);
+    printStack(&stk); 
+    cout<< "---------" << endl;
     push(&stk, 5); 
     push(&stk, 10);
     push(&stk, 15);

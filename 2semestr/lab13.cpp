@@ -14,7 +14,7 @@ int main() {
 
     getline(cin, s);
 
-    for (int it = 0; it < s.length(); it++) {
+    for (size_t it = 0; it < s.length(); it++) {
         if (s[it] != ' ') {
             s_new += s[it];
         }

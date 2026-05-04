@@ -8,7 +8,9 @@ using namespace std;
 int main() {
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-    int x = 4;
+    int x{};
+    cout << "Введите число для проверки -> ";
+    cin >> x;
     if(is_Simple(x)){
         cout << "Число " << x << " пристое" << endl;
     }else{
